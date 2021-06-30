@@ -2,7 +2,7 @@
   "name": "vite-reactts-eslint-prettier",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --port 8080",
+    "dev": "vite --port 8080 --https",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
@@ -11,8 +11,10 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^1.17.0",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-use": "^17.2.4"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
